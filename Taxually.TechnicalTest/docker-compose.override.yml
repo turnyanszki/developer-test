@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  taxually.technicaltest:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "80"
+      - "443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+  seq:
+    hostname: 0863f53ef4c0
+    environment:
+      - ACCEPT_EULA=Y
+      - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+      - BASE_URI=
+      - DATA_DIR=/data
+      - TZ=Etc/UTC
+    ports:
+      - '5341:5341'
+      - '8090:80'
+    restart: unless-stopped
+    labels:
+      - Description=Seq
+      - 'Vendor=Datalust Pty Ltd'
+      - desktop.docker.io/wsl-distro=Ubuntu
+      - org.opencontainers.image.ref.name=ubuntu
+      - org.opencontainers.image.version=22.04
+    image: 'datalust/seq:latest'

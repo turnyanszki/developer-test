@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxually.TechnicalTest", "Taxually.TechnicalTest\Taxually.TechnicalTest.csproj", "{A119A885-BCD4-473B-861A-480AA3C87EB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxually.TechnicalTest", "Taxually.TechnicalTest\Taxually.TechnicalTest.csproj", "{A119A885-BCD4-473B-861A-480AA3C87EB6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A6378B39-A785-4BED-845B-51A508DFAE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxually.TechnicalTest.Contracts", "..\Taxually.TechnicalTest.Contracts\Taxually.TechnicalTest.Contracts.csproj", "{1DFE4045-7B46-45BF-BDE0-276CE06364FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxually.TechnicalTest.Tests", "..\Taxually.TechnicalTest.Tests\Taxually.TechnicalTest.Tests.csproj", "{9BD8E671-C816-451E-8F8C-CB73A7F254A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{A119A885-BCD4-473B-861A-480AA3C87EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A119A885-BCD4-473B-861A-480AA3C87EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A119A885-BCD4-473B-861A-480AA3C87EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6378B39-A785-4BED-845B-51A508DFAE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6378B39-A785-4BED-845B-51A508DFAE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6378B39-A785-4BED-845B-51A508DFAE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6378B39-A785-4BED-845B-51A508DFAE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DFE4045-7B46-45BF-BDE0-276CE06364FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DFE4045-7B46-45BF-BDE0-276CE06364FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DFE4045-7B46-45BF-BDE0-276CE06364FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DFE4045-7B46-45BF-BDE0-276CE06364FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD8E671-C816-451E-8F8C-CB73A7F254A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD8E671-C816-451E-8F8C-CB73A7F254A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD8E671-C816-451E-8F8C-CB73A7F254A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD8E671-C816-451E-8F8C-CB73A7F254A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

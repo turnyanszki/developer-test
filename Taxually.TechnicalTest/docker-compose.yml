@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  taxually.technicaltest:
+    image: ${DOCKER_REGISTRY-}taxuallytechnicaltest
+    build:
+      context: .
+      dockerfile: Taxually.TechnicalTest/Dockerfile
